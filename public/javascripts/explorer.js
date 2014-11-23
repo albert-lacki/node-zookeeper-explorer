@@ -492,7 +492,8 @@ function displayDataModificationForm(currentData, currentVersion) {
 		+ "<h4>Edit node data</h4>"
 		+ "Modify the data for node " + getPathFromRoot( treeSelectedNode ) + "<br/>"
 		+ "<input type='hidden' id='nodeVersion' value='" + currentVersion + "' />"
-		+ "New data: <input type='text' id='nodeData' placeholder='" + ((currentData=="") ? "<no data>" : currentData ) + "' /><br/>"
+        + "New data: <textarea id='nodeData' cols='40' rows='5'>" + currentData + "</textarea><br />"
+//		+ "New data: <input type='text' id='nodeData' placeholder='" + ((currentData=="") ? "<no data>" : currentData ) + "' /><br/>"
 		+ "<button id='btnUpdateDataConfirm' class='btn btn-primary' type='button'>Update data</button> "
 		+ "<button id='btnUpdateDataCancel' class='btn' type='button'>Cancel</button>"
 		+ "</div>");
